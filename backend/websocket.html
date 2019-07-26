@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>ICU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+
+    <script>
+        const webSocket = new WebSocket("ws://localhost:3000");
+
+        webSocket.onopen = () => {
+            console.log('open connection')
+            webSocket.send('hello');
+        }
+
+        webSocket.onclose = () => {
+            console.log('close connection')
+        }
+
+        webSocket.onmessage = function (e) {
+            if (e.data) {
+                const dataReceived = JSON.parse(e.data);
+                const { errorType, objectClasses } = dataReceived;
+                console.log(dataReceived)
+            }
+        }
+    </script>
+
+</body>
+
+</html>
