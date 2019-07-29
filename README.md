@@ -46,6 +46,10 @@ git clone https://github.com/tensorflow/models.git
 10. Change the MODEL_NAME in the combined.py to the COCO API installed
 11. Run the program with scoring system
      ``` bash
+    # From Safe_Driving/backend
+    npm start
+    ```
+     ``` bash
     # From Safe_Driving/models/research/object_detection
     python "MSHK Hackathon.py"
     ```
@@ -53,7 +57,4 @@ git clone https://github.com/tensorflow/models.git
     # From Safe_Driving/models/research/object_detection
     python combined.py
     ```
-    ``` bash
-    # From Safe_Driving/backend
-    npm start
-    ```
+   
