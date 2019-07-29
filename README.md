@@ -17,7 +17,8 @@ git clone https://github.com/tensorflow/models.git
 7. Install Protobuf Compilation:
     7.1 Download protoc-3.4.0-win32.zip from https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0 
     7.2 move bin/protoc.exe to models/research directory 
-    7.3  ``` bash
+    7.3  
+    ``` bash
     # From /models/research/
     protoc object_detection/protos/*.proto --python_out=.
     ```
