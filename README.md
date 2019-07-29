@@ -14,9 +14,9 @@ git clone https://github.com/tensorflow/models.git
     ``` bash
     pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
     ```
-7. Install Protobuf Compilation:\n
-    1. Download protoc-3.4.0-win32.zip from https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0 \n 
-    2. move bin/protoc.exe to models/research directory \n
+7. Install Protobuf Compilation:
+    1. Download protoc-3.4.0-win32.zip from https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0 
+    2. move bin/protoc.exe to models/research directory 
     3.  
     ``` bash
     # From /models/research/
@@ -42,4 +42,18 @@ git clone https://github.com/tensorflow/models.git
     pip install playsound
     pip install dlib
     pip install requests
+    ```
+10. Change the MODEL_NAME in the combined.py to the COCO API installed
+11. Run the program with scoring system
+     ``` bash
+    # From Safe_Driving/models/research/object_detection
+    python "MSHK Hackathon.py"
+    ```
+    ``` bash
+    # From Safe_Driving/models/research/object_detection
+    python combined.py
+    ```
+    ``` bash
+    # From Safe_Driving/backend
+    npm start
     ```
